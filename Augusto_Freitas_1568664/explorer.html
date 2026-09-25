@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>SuperFlix - Explorador de Séries</title>
+    <link rel="stylesheet" href="styles.css">
+
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" target="_blank" class="navbar-brand text-white"><img src="assets/logo_size.jpg"
+                    alt="logo"></a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar séries..." aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </header>
+    <div class="container my-5">
+        <h1 class="mb-4">Explorador de Séries</h1>
+        <hr>
+        <div class="mb-4">
+            <input type="text" class="form-control" id="searchInput" placeholder="Pesquisar séries...">
+        </div>
+        <div class="filter-bar">
+            <h5>Filtros</h5>
+            <form>
+                <div class="mb-3">
+                    <label for="genreSelect" class="form-label">Gênero</label>
+                    <select class="form-select" id="genreSelect">
+                        <option value="">Escolha um gênero</option>
+                        <option value="action">Ação</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedy">Comédia</option>
+                        <option value="thriller">suspense</option>
+                        <option value="horror">Terror</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="yearSelect" class="form-label">Ano</label>
+                    <select class="form-select" id="yearSelect">
+                        <option value="">Escolha uma década</option>
+                        <option value="2020">Década de 2020</option>
+                        <option value="2010">Década de 2010</option>
+                        <option value="2000">Década de 2000</option>
+                        <option value="1990">Década de 1990</option>
+                        <option value="1980">Década de 1980</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="ratingSelect" class="form-label">Classificação</label>
+                    <select class="form-select" id="ratingSelect">
+                        <option value="">Escolha uma classificação</option>
+                        <option value="l">L</option>
+                        <option value="10">10 anos</option>
+                        <option value="12">12 anos</option>
+                        <option value="14">14 anos</option>
+                        <option value="16">16 anos</option>
+                        <option value="18">18 anos</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Filtrar</button>
+            </form>
+        </div>
+        <div class="row" id="seriesContainer">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/true-detective.jpg" class="card-img-top" alt="Série 1">
+                    <div class="card-body">
+                        <h5 class="card-title">True Detective</h5>
+                        <p class="card-text">True Detective é uma série antológica de drama e crime, onde cada temporada
+                            apresenta uma nova história e personagens, explorando temas sombrios como moralidade,
+                            violência e corrupção. A primeira temporada, estrelada por Matthew McConaughey e Woody
+                            Harrelson, segue dois detetives investigando um misterioso caso de assassinatos rituais na
+                            Louisiana, ao longo de vários anos. A narrativa envolve flashbacks e uma atmosfera carregada
+                            de filosofia existencial. As temporadas subsequentes mantêm o foco em crimes complexos e
+                            personagens moralmente ambíguos, com novos elencos e cenários.</p>
+                        <a href="serie.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/ruptura.jpeg" class="card-img-top" alt="Série 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruptura</h5>
+                        <p class="card-text">Ruptura (originalmente Severance) é uma série de ficção científica e
+                            suspense que explora temas de identidade e controle. A trama gira em torno de um grupo de
+                            funcionários de uma empresa chamada Lumon Industries, que se submeteram a um procedimento
+                            chamado "ruptura", que separa suas memórias pessoais das profissionais. Como resultado, eles
+                            não têm consciência de suas vidas fora do trabalho, levando a uma existência limitada e
+                            controlada.</p>
+                        <a href="serie2.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/Dark-Netflix.jpg" class="card-img-top" alt="Série 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dark</h5>
+                        <p class="card-text">Dark é uma série de ficção científica e mistério alemã que explora a
+                            interconexão de quatro famílias na pequena cidade de Winden, à medida que desvendam segredos
+                            sombrios e eventos misteriosos que ocorrem ao longo de várias gerações. A história começa
+                            com o desaparecimento de duas crianças, o que desencadeia uma série de eventos que revela a
+                            existência de um labirinto de viagens no tempo.</p>
+                        <a href="serie3.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/breaking-bad.jpg" class="card-img-top" alt="Série 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Breaking Bad</h5>
+                        <p class="card-text">Breaking Bad é uma série de drama que segue a transformação de Walter
+                            White, um professor de química do ensino médio que, após ser diagnosticado com câncer
+                            terminal, decide fabricar e vender metanfetamina para garantir o futuro financeiro de sua
+                            família. Com a ajuda de Jesse Pinkman, um ex-aluno, Walter mergulha cada vez mais fundo no
+                            mundo do crime, adotando o alter ego "Heisenberg". Ao longo da série, ele enfrenta cartéis
+                            de drogas, a polícia e dilemas morais, enquanto seu comportamento se torna cada vez mais
+                            perigoso e violento. A série explora temas como ambição, poder e a corrosão moral.</p>
+                        <a href="serie4.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/soprano.jpg" class="card-img-top" alt="Série 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Família Soprano</h5>
+                        <p class="card-text">Família Soprano (The Sopranos) é uma série de drama que segue Tony Soprano,
+                            um chefe da máfia em Nova Jersey, enquanto ele equilibra as pressões de sua vida criminosa
+                            com as responsabilidades familiares. Ao longo da série, Tony enfrenta crises de ansiedade, o
+                            que o leva a procurar ajuda de uma terapeuta, a Dra. Melfi, enquanto tenta manter sua
+                            posição de poder no submundo. A série explora temas como lealdade, moralidade, violência e o
+                            impacto psicológico da vida no crime, ao mesmo tempo que oferece um retrato complexo de um
+                            homem dividido entre seus deveres familiares e seu papel como líder da máfia.</p>
+                        <a href="serie5.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
